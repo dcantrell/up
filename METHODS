@@ -1,0 +1,15 @@
+
+Each operating system has a unique way of obtaining the uptime.  They are
+somewhat common, so the way up works is by defining these methods,
+detecting the operating system in up.h, and including the correct method
+source file during compilation.  The methods currently supported:
+
+   bsd.c      The BSD-style method for getting the system (a sysctl).
+   utmpx.c    Getting the uptime through the utmp file.
+
+Both methods get the boot time and subtract that from the current time.
+If you want to add support for a new style, just read one of the above
+files to see the prototype for the uptime() function, then write it.  The
+up.h file detects the host and includes the appropriate method, so you
+will have to add something in there for your host.
+

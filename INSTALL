@@ -1,0 +1,7 @@
+How to install up:
+
+1) gzip -dc up-1.0.tar.gz | tar -xvf -
+2) cd up-1.0
+3) make
+4) Copy up to /usr/local/bin or another location.
+5) Copy the man page to /usr/local/man/man1 or something like that.

@@ -1,0 +1,45 @@
+.\" up man page
+.\" by: David Cantrell
+.\"
+.TH UP 1 "OCTOBER 1998" Linux "User Manuals"
+.SH NAME
+up \- display system uptime in uber-cool format
+.SH SYNOPSIS
+.B up [option]
+.SH DESCRIPTION
+up was written as a replacement for the uptime program that comes with most
+Linux distributions. It can output the uptime in the standard format that most
+users are accustomed to or it can output the uptime in its native format. up's
+most popular feature is that it can calculate and display the uptime all the
+way out to decades.
+.SH OPTIONS
+.IP -c
+Display uptime in standard uptime format, for quick comparison with other
+systems.
+.IP -n
+Output numbers only (useful for scripts?). The numbers are in this order:
+decades, years, weeks, days, hours, minutes. Zero values are not eliminated.
+.IP -u
+Displays the default uptime format without the preceeding 'up'.
+.IP -V
+Return the version number and author information.
+.IP -h
+Display the help screen.
+.SH LONG OPTIONS
+Command line options can also be specified with their long format equivalent.
+.IP --compare
+Same as -c
+.IP --numbers
+Same as -n
+.IP --noup
+Same as -u
+.IP --version
+Same as -V
+.IP --help
+Same as -h
+.SH BUGS
+No known bugs in the current versions.
+.SH AUTHOR
+David Cantrell <david@burdell.org>
+.SH "SEE ALSO"
+.BR uptime (1)
